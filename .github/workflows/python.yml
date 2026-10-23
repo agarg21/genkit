@@ -206,7 +206,7 @@ jobs:
           PY_VER: ${{ matrix.python-version }}
         run: |
           uv run --python "$PY_VER" --active --isolated --directory py \
-            pytest -n auto -xvs --log-level=DEBUG .
+            pytest -n logical -xvs --log-level=DEBUG .
   # =============================================================================
   # Build verification (runs after tests pass)
   # =============================================================================
